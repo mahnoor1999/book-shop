@@ -1,0 +1,77 @@
+body {
+  font-size: 14px !important;
+}
+.navbar-brand {
+  font-size: 14px !important;
+}
+.custom-bg-color {
+  background-color: #535167;
+}
+.custom-color {
+  color: #535167;
+}
+.logo-width {
+  width: 10em;
+}
+.card:hover {
+  /* box-shadow: 3px 3px 13px */
+  box-shadow: 3px 3px 13px #c9c9c9;
+
+}
+.name-and-email{
+ padding-right: 140px;
+}
+#sendBtn:hover{
+  background-color: #454357;
+transition: all ease-in-out;
+}
+/* show less and show more in book description */
+.read-more-state {
+  display: none;
+}
+
+.read-more-target {
+  opacity: 0;
+  max-height: 0;
+  font-size: 0;
+  transition: 0.25s ease;
+}
+
+.read-more-state:checked ~ .read-more-wrap .read-more-target {
+  opacity: 1;
+  font-size: inherit;
+  max-height: 999em;
+}
+
+.read-more-state ~ .read-more-trigger:before {
+  content: "Show more";
+}
+
+.read-more-state:checked ~ .read-more-trigger:before {
+  content: "Show less";
+}
+/* show less and more trigger */
+.read-more-trigger {
+  cursor: pointer;
+  padding: 0 0.5em;
+  color: #535167;
+  display: inline-block;
+  font-weight: bold;
+  font-size: 1rem;
+  text-align: right;
+}
+/* right cap arrow on trigger */
+.show-more {
+    font-size: 0.7rem;
+}
+/* Media queries */
+@media only screen and (max-width: 425px) {
+  .logo-width {
+    width: 7em;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .navbar-light {
+    background-color: rgb(247, 247, 247);
+  }
+}
