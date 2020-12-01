@@ -16,13 +16,14 @@
 </head>
 
 <body>
-    <header class=" sticky-top pb-2 shadow-sm bg-white">
+    <header class=" sticky-top pb-1 shadow-sm bg-white">
         <!-- top header -->
         <div
             class="custom-bg-color d-flex flex-column flex-md-row justify-content-around align-items-between text-white py-lg-2 py-md-2">
             <div class="text-center">
                 <span class="px-2 d-block d-sm-inline"><i class="fas fa-phone-alt"></i> (757)202-1134</span>
-                <span class="px-2"><i class="far fa-envelope"></i><a href="mailto:Books@Nobelsbooksrec.com" class="text-white text-decoration-none"> Books@Nobelsbooksrec.com</a></span>
+                <span class="px-2"><i class="far fa-envelope"></i><a href="mailto:Books@Nobelsbooksrec.com"
+                        class="text-white text-decoration-none"> Books@Nobelsbooksrec.com</a></span>
             </div>
             <div class="d-none d-lg-flex">
                 <span><i class="far fa-building"></i> 3709 Tiffany Lane Virgginia Beach, VA 23456</span>
@@ -39,22 +40,22 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav mx-auto" data-aos="zoom-in" data-aos-duration="3000">
+                <ul class="navbar-nav mx-auto" data-aos="fade-in" data-aos-duration="3000">
                     <li class="nav-item ">
-                        <a class="nav-link font-weight-bold" href="#">Home <span class="sr-only">(current)</span></a>
+                        <a class="nav-link font-weight-bold" href="#home">Home <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link font-weight-bold" href="#">Features</a>
+                        <a class="nav-link font-weight-bold" href="#about">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link font-weight-bold" href="#">Pricing</a>
+                        <a class="nav-link font-weight-bold" href="#contact">Contact</a>
                     </li>
                 </ul>
             </div>
         </nav>
     </header>
     <main class="mt-4">
-        <section>
+        <section id="home">
             <!-- Main heading -->
             <h1 class="container text-center font-weight-bold custom-color">Book Lovers - Welcome to your spiritual home
             </h1>
@@ -76,7 +77,8 @@
                     </div>
                     <!-- second card -->
                     <div class="col-sm">
-                        <div class="card my-2 pb-lg-0  pb-md-5 pb-sm-5" data-aos="flip-left" data-aos-duration="3000" data-aos-delay="200">
+                        <div class="card my-2 pb-lg-0  pb-md-5 pb-sm-5" data-aos="flip-left" data-aos-duration="3000"
+                            data-aos-delay="200">
                             <div class="card-body">
 
                                 <div class="card-text pb-3">
@@ -121,7 +123,7 @@
             </div>
         </section>
         <!-- books recommendation section -->
-        <section class=" my-4 py-5 custom-bg-color px-lg-5">
+        <section class=" my-4 py-5 custom-bg-color px-lg-5" id="about">
             <h4 class="text-center text-white mb-2">Recommendations Authors Buy NOBLE BOOKS RECYCLING</h4>
             <div class="container">
                 <div class="row my-3">
@@ -207,22 +209,23 @@
                 gifts are suitable for all the year.</h2>
         </section>
         <!-- contact us -->
-        <section>
+        <section id="contact">
             <div>
-                <h1 class="text-center custom-color mb-3 mt-5 font-weight-bold" data-aos="flip-up">Contact Us</h1>
+                <h1 class="text-center custom-color mb-3 mt-5 font-weight-bold" data-aos="flip-up" >Contact Us</h1>
                 <h6 class="text-center container">Do you have any questions? please do no hesitate to contact us
                     directly. Our team
                     will come back to you with in a matter of hours to help you.</h6>
             </div>
             <!-- form -->
             <div class="contact-wrap mx-auto my-5 container ">
-                <form class="needs-validation" novalidate>
+                <form action="https://script.google.com/macros/s/AKfycbxgsWHgcc2EQqaz4MLPmkSvz-RVMhGJeCAFjugc/exec"
+                    class="needs-validation" novalidate method="POST" data-email="from_email@example.com">
                     <!-- name and email -->
                     <div class="row">
-                        <div class=" form-group col " id="">
+                        <div class=" form-group col ">
                             <label for="name"><strong class="text-muted">Your Name</strong></label>
-                            <input type="text" class="form-control  personal-info-input name-and-email" id="name-input"
-                                required>
+                            <input type="text" class="form-control  personal-info-input name-and-email" id="name"
+                                name="name" required>
                             <div class="valid-feedback">
                                 Perfect!
                             </div>
@@ -232,8 +235,8 @@
                         </div>
                         <div class="form-group col">
                             <label for="email"><strong class="text-muted">Your Email</strong></label>
-                            <input type="email" class="form-control personal-info-input name-and-email" id="email-input"
-                                required>
+                            <input type="email" class="form-control personal-info-input name-and-email" id="email"
+                                name="email" required>
                             <div class="valid-feedback">
                                 Perfect!
                             </div>
@@ -245,7 +248,8 @@
                     <!-- subject -->
                     <div class="form-group">
                         <label for="subject"><strong class="text-muted">Subject</strong></label>
-                        <input type="tel" class="form-control  personal-info-input " id="subject-input" required>
+                        <input type="text" class="form-control  personal-info-input " id="subject" name="subject"
+                            required>
                         <div class="valid-feedback">
                             Perfect!
                         </div>
@@ -256,7 +260,8 @@
                     <!-- message -->
                     <div class="form-group">
                         <label for=""><strong class="text-muted">Your Message</strong></label>
-                        <input type="text" class="form-control  personal-info-input pb-5" id="message-input" required>
+                        <input type="text" class="form-control  personal-info-input" id="message" name="message"
+                            required>
                         <div class="valid-feedback">
                             Perfect!
                         </div>
@@ -265,7 +270,7 @@
                         </div>
                     </div>
                     <div class="text-center ">
-                        <button type="button" id="sendBtn" class="btn px-5 font-weight-bold custom-bg-color text-white"
+                        <button type="submit" id="sendBtn" class="btn px-5 font-weight-bold custom-bg-color text-white"
                             data-target="#myModal" data-toggle="modal">Send</button></div>
                 </form>
             </div>

@@ -1,7 +1,7 @@
 body {
   font-size: 14px !important;
   box-sizing: border-box;
-  overflow-x: hidden
+  overflow-x: hidden;
 }
 .navbar-brand {
   font-size: 14px !important;
@@ -18,14 +18,10 @@ body {
 .card:hover {
   /* box-shadow: 3px 3px 13px */
   box-shadow: 3px 3px 13px #c9c9c9;
-
 }
-.name-and-email{
- /* padding-right: 140px; */
-}
-#sendBtn:hover{
+#sendBtn:hover {
   background-color: #454357;
-transition: all ease-in-out;
+  transition: all ease-in-out;
 }
 /* show less and show more in book description */
 .read-more-state {
@@ -64,7 +60,7 @@ transition: all ease-in-out;
 }
 /* right cap arrow on trigger */
 .show-more {
-    font-size: 0.7rem;
+  font-size: 0.7rem;
 }
 /* Media queries */
 @media only screen and (max-width: 425px) {
